@@ -1,0 +1,43 @@
+{% extends 'base.html'%}
+{%load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About </title>
+</head>
+<body>
+
+<!-- About Section -->
+<section id="about" class="py-12 bg-gray-900">
+    <h1 class="text-center text-white text-4xl font-bold mb-4">About Me</h1>
+    <div class="flex flex-col md:flex-row justify-around items-center gap-10 w-4/5 mx-auto">
+        <div class="flex justify-center mr-6">
+            <img src="{% static 'img/adil.img.jpg' %}" alt="Profile" class="w-64 h-64 object-cover rounded-lg shadow-lg">
+        </div>
+        <div class="max-w-xl text-gray-300 text-lg">
+            <p>I am Adil Khan, a passionate Software Engineer specializing in building modern, responsive web applications.</p>
+            <br></br>
+            <p>   *"Hi, I’m Adil Khan, a passionate Python Developer with expertise in Django framework. I hold a B.Tech in Computer Science from Dr. A.P.J. Abdul Kalam Technical University.
+
+I specialize in Python, Django, REST APIs, HTML, CSS, JavaScript, MySQL, and ORM frameworks. I have worked on projects such as a Library Management System, Note-Taking Application, and an E-Learning Platform with admin and user modules.
+
+Currently, I’m exploring API development, backend optimization, and cloud-based deployments to enhance my skills further.
+
+My vision is to grow as a Full-Stack Web Developer, mastering backend with Django and frontend with modern web technologies.
+
+When I’m not coding, you’ll find me playing football, learning new tools, or exploring the latest trends in software development."*</p>
+           <a href="mailto:adil.khan@example.com"class="bg-slate-500 px-4 py-2 mx-2 inline-block mt-6 rounded hover:text-white">Hire Me
+         </a>
+
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>
+
+{% endblock %}

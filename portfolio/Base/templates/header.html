@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+<head>
+    <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar  start -->
+<nav class="bg-blue-600 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="text-xl font-bold"> My Portfolio</div>
+        <div class="md:hidden">
+            <button id="menu-btn" class="focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <ul id="menu" class="hidden md:flex space-x-6 text-lg">
+            <li><a href="/" class="hover:text-gray-300"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="/about" class="hover:text-gray-300"><i class="fa-solid fa-right-to-bracket"></i> About</a></li>
+            <li><a href="/skill" class="hover:text-gray-300"><i class="fa-solid fa-right-to-bracket"></i> Skills</a></li>
+            <li><a href="/contact" class="hover:text-gray-300"><i class="fa-solid fa-right-to-bracket"></i> Contact</a></li>
+        </ul>
+    </div>
+    <ul id="mobile-menu" class="hidden flex-col md:hidden mt-4 space-y-2 text-center">
+        <li class="hover:text-gray-300">Home</li>
+        <li class="hover:text-gray-300">About</li>
+        <li class="hover:text-gray-300">Skills</li>
+        <li class="hover:text-gray-300">Contact</li>
+    </ul>
+</nav>
+
+
+

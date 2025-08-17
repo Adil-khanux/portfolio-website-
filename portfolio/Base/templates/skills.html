@@ -1,0 +1,109 @@
+{% extends 'base.html'%}
+{%load static %}
+{% block content %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Skills k section -->
+{% comment %} <section id="skills" class="py-12 bg-gray-800 text-white">
+    <div class="w-4/5 mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-gray-700 p-4 rounded-lg shadow">HTML & CSS</div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow">JavaScript</div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow">Python & Django</div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow">Tailwind CSS</div>
+        </div>
+    </div>
+</section>
+ {% endcomment %}
+
+
+<section id="skills" class="py-16 bg-gray-100 text-gray-900">
+  <div class="w-4/5 mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-10">My Skills</h2>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Skill Card -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-4">Programming</h3>
+        <ul class="space-y-2 text-left">
+          <li>✅ Python</li>
+          <li>✅ Java</li>
+          <li>✅ JavaScript</li>
+        </ul>
+      </div>
+      
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-4">Frameworks</h3>
+        <ul class="space-y-2 text-left">
+          <li>✅ Django</li>
+          <li>✅ Spring Boot</li>
+          <li>✅ Hibernate</li>
+          <li>✅ Tailwind CSS</li>
+          
+        </ul>
+      </div>
+      
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-4">Databases & Tools</h3>
+        <ul class="space-y-2 text-left">
+          <li>✅ MySQL</li>
+          <li>✅ Git & GitHub</li>
+    
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="py-16 bg-gray-800 text-white">
+  <div class="w-4/5 mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-10">Project Exploration</h2>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Project Card -->
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-3">E-Learning Platform</h3>
+        <p class="mb-4 text-gray-300">Web application with admin & user login where admin can upload notes/videos and users can study them.</p>
+        <p class="mb-4 text-sm text-gray-400">Tech Stack: Django, MySQL, HTML, CSS</p>
+        <a href="https://github.com/Adil-khanux/elearning" target="_blank" class="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700">GitHub</a>
+      </div>
+      
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-3">Library Management System</h3>
+        <p class="mb-4 text-gray-300">System with admin & user portals to manage books, issue/return, and track users.</p>
+        <p class="mb-4 text-sm text-gray-400">Tech Stack: Java, Spring Boot, Hibernate, MySQL</p>
+        <a href="https://github.com/Adil-khanux/library-system" target="_blank" class="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700">GitHub</a>
+      </div>
+      
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-3">Note Taking App</h3>
+        <p class="mb-4 text-gray-300">Simple CRUD based app where users can create, update, and delete notes.</p>
+        <p class="mb-4 text-sm text-gray-400">Tech Stack: Django ORM, Bootstrap, SQLite</p>
+        <a href="https://github.com/Adil-khanux/note-app" target="_blank" class="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700">GitHub</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+</html>
+{% endblock %}
+
+
+
+
